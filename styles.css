@@ -2,6 +2,9 @@
 	height: 300px;
 	width: 300px;
 	background-color: green;
+	/* position: relative; */
+	top:  20px;
+	left:  20px;
 }
 
 #middle-box{
@@ -11,6 +14,9 @@
 	margin: auto;
 	color: white;
 	font-weight: 500;
+	position: fixed;
+	bottom: 0;
+	right: 0;
 }
 
 #inside-box{
@@ -20,4 +26,7 @@
 	margin: auto;
 	text-align: center;
 	color: black;
+	position: relative;
+	top: 0;
+	left: 0;
 }
