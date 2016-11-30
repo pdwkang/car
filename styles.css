@@ -7,43 +7,110 @@
 #upperPart{
 	height: 60px;
 	width: 400px;
+	margin-left: 15px;
 }
+
 
 #triangle{
 	width: 0;
 	height: 0;
-	margin-left: 100px;
+	margin-left: 150px;
 	position: absolute;
-	border-bottom: 60px solid red;
+	border-bottom: 60px solid black;
 	border-left: 80px solid transparent;
+}
+
+#triangle-body{
+	width: 0;
+	height: 0;
+	margin-top: 8px;
+	margin-left: -79px;
+	position: absolute;
+	border-bottom: 55px solid red;
+	border-left: 75px solid transparent;
 }
 
 #window{
 	width: 0;
 	height: 0;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: -55px;
 	position: absolute;
-	border-bottom: 30px solid #cfddf3;
-	border-left: 40px solid transparent;
+	border-bottom: 35px solid black;
+	border-left: 44px solid transparent;
 }
 
 
-#box{
+#body{
 	height: 80px;
-	width: 400px;
+	width: 450px;
 	background-color: red;
-	border-radius: 13%;
+	border-bottom-right-radius: 15%;
+	border: 3px solid black;
+	border-top-left-radius: 40%;
+	border-bottom-left-radius: 7%;
+	border-top-right-radius: 5%;	
+}
+
+#knob{
+	height: 10px;
+	width: 20px;
+	background-color: red;
+	position: absolute;
+	margin-left: 260px;
+	border: solid 3px black;
+	margin-top: 15px;
+	border-right: solid 11px black;
+	border-radius: 20%;
+}
+
+#door{
+	height: 70px;
+	width: 170px;
+	background-color: red;
+	position: absolute;
+	margin-left: 153px;
+	border: 3px black solid;
+	border-top: none;
+	border-top-left-radius: 7%;
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 10%;
+	border-bottom-left-radius: 25%;
+}
+
+#headlight{
+	height: 30px;
+	width: 12px;
+	background-color: yellow;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 12px;
+	border-radius: 15%;
+	border: 3px black solid;
+	border-left: none;
+}
+
+#tail-light{
+	height: 20px;
+	width: 5px;
+	background-color: grey;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 13px;
+	margin-left: 450px;
+	border-radius: 20%;
+	border: 3px black solid;
 }
 
 #circle1{
 	height: 80px;
 	width:  80px;
 	border-radius: 50%;
-	margin-top: -50px;
+	margin-top: -60px;
 	background-color: black;
-	margin-left: 50px;
+	margin-left: 45px;
 	position: absolute;
+	border: 3px dashed grey;
 }
 
 #circle2{
@@ -52,25 +119,28 @@
 	border-radius: 50%;
 	background-color: black;
 	position: absolute;
-	margin-top: -50px;
-	margin-left: 270px;
+	margin-top: -60px;
+	margin-left: 340px;
+	border: 3px dashed grey;
 }
 
 
 #rim1{
-	height: 55px;
-	width:  55px;
+	height: 50px;
+	width:  50px;
 	border-radius: 50%;
-	background-color: grey;
+	background-color: silver;
 	position: relative;
-	margin: 12.5px;
+	margin: 10px;
+	border: 5px grey solid;
 }
 
 #rim2{
-	height: 55px;
-	width:  55px;
+	height: 50px;
+	width:  50px;
 	border-radius: 50%;
-	background-color: grey;
+	background-color: silver;
 	position: relative;
-	margin: 12.5px;
+	margin: 10px;
+	border: 5px grey solid;
 }
