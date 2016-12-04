@@ -1,17 +1,33 @@
+h2{
+	color: #5f5f5f;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 3%;
+	text-decoration: underline;
+}
+
 #car{
 	background-color: white;
-	margin: 150px 150px;
+	margin-top: 10%;
+	margin-left: 65%;
 	position: relative;
 }
 
-#upperPart{
+#car2{
+	background-color: white;
+	margin-top: 5%;
+	margin-left: 65%;
+	position: relative;
+}
+
+.upperPart{
 	height: 60px;
 	width: 400px;
-	margin-left: 15px;
+	margin-left: 15px;2
 }
 
 
-#triangle{
+.triangle{
 	width: 0;
 	height: 0;
 	margin-left: 150px;
@@ -20,7 +36,7 @@
 	border-left: 80px solid transparent;
 }
 
-#triangle-body{
+.triangle-body{
 	width: 0;
 	height: 0;
 	margin-top: 8px;
@@ -30,7 +46,17 @@
 	border-left: 75px solid transparent;
 }
 
-#window{
+.triangle-body2{
+	width: 0;
+	height: 0;
+	margin-top: 8px;
+	margin-left: -79px;
+	position: absolute;
+	border-bottom: 55px solid blue;
+	border-left: 75px solid transparent;
+}
+
+.window{
 	width: 0;
 	height: 0;
 	margin-top: 20px;
@@ -41,7 +67,7 @@
 }
 
 
-#body{
+.body{
 	height: 80px;
 	width: 450px;
 	background-color: red;
@@ -52,19 +78,19 @@
 	border-top-right-radius: 5%;	
 }
 
-#knob{
-	height: 10px;
-	width: 20px;
-	background-color: red;
-	position: absolute;
-	margin-left: 260px;
-	border: solid 3px black;
-	margin-top: 15px;
-	border-right: solid 11px black;
-	border-radius: 20%;
+
+.body2{
+	height: 80px;
+	width: 450px;
+	background-color: blue;
+	border-bottom-right-radius: 15%;
+	border: 3px solid black;
+	border-top-left-radius: 40%;
+	border-bottom-left-radius: 7%;
+	border-top-right-radius: 5%;	
 }
 
-#door{
+.door{
 	height: 70px;
 	width: 170px;
 	background-color: red;
@@ -78,7 +104,46 @@
 	border-bottom-left-radius: 25%;
 }
 
-#headlight{
+.door2{
+	height: 70px;
+	width: 170px;
+	background-color: blue;
+	position: absolute;
+	margin-left: 153px;
+	border: 3px black solid;
+	border-top: none;
+	border-top-left-radius: 7%;
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 10%;
+	border-bottom-left-radius: 25%;
+}
+
+
+.knob{
+	height: 10px;
+	width: 20px;
+	background-color: red;
+	position: absolute;
+	margin-left: 260px;
+	border: solid 3px black;
+	margin-top: 15px;
+	border-right: solid 11px black;
+	border-radius: 20%;
+}
+
+.knob2{
+	height: 10px;
+	width: 20px;
+	background-color: blue;
+	position: absolute;
+	margin-left: 260px;
+	border: solid 3px black;
+	margin-top: 15px;
+	border-right: solid 11px black;
+	border-radius: 20%;
+}
+
+.headlight{
 	height: 30px;
 	width: 12px;
 	background-color: yellow;
@@ -90,7 +155,7 @@
 	border-left: none;
 }
 
-#tail-light{
+.tail-light{
 	height: 20px;
 	width: 5px;
 	background-color: grey;
@@ -102,7 +167,7 @@
 	border: 3px black solid;
 }
 
-#circle1{
+.circle1{
 	height: 80px;
 	width:  80px;
 	border-radius: 50%;
@@ -113,7 +178,7 @@
 	border: 3px dashed grey;
 }
 
-#circle2{
+.circle2{
 	height: 80px;
 	width:  80px;
 	border-radius: 50%;
@@ -125,7 +190,7 @@
 }
 
 
-#rim1{
+.rim1{
 	height: 50px;
 	width:  50px;
 	border-radius: 50%;
@@ -135,7 +200,7 @@
 	border: 5px grey solid;
 }
 
-#rim2{
+.rim2{
 	height: 50px;
 	width:  50px;
 	border-radius: 50%;

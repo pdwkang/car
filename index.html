@@ -3,34 +3,78 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
 </head>
 <body>
+	<div><h2>Click the red car to race the blue car!</h2></div>
 	<div id="car">
-
-		<div id="upperPart">
-			<div id="triangle">
-				<div id="triangle-body">
-					<div id="window"></div>
+		<div class="upperPart">
+			<div class="triangle">
+				<div class="triangle-body">
+					<div class="window"></div>
 				</div>	
 			</div>
 		</div>
 
-		<div id="body">
-			<div id="door"></div>
-			<div id="knob"></div>
-			<div id="headlight"></div>
-			<div id="tail-light"></div>
+		<div class="body">
+			<div class="door"></div>
+			<div class="knob"></div>
+			<div class="headlight"></div>
+			<div class="tail-light"></div>
 		</div>
 
-		<div id="circle1">
-			<div id="rim1"></div>
+		<div class="circle1">
+			<div class="rim1"></div>
 		</div>		
 
-		<div id="circle2">
-			<div id="rim2"></div>
+		<div class="circle2">
+			<div class="rim2"></div>
 		</div>
 
 	</div>
+<br>
+	<div id="car2">
+		<div class="upperPart">
+			<div class="triangle">
+				<div class="triangle-body2">
+					<div class="window"></div>
+				</div>	
+			</div>
+		</div>
+
+		<div class="body2">
+			<div class="door2"></div>
+			<div class="knob2"></div>
+			<div class="headlight"></div>
+			<div class="tail-light"></div>
+		</div>
+
+		<div class="circle1">
+			<div class="rim1"></div>
+		</div>		
+
+		<div class="circle2">
+			<div class="rim2"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+				$('#car').click(function() {
+		        	$('#car').animate({
+	    	   			'marginLeft' : "-=50px" //moves left
+	       			});
+	       			//blue car moves on its own after click
+	       			for(var i = 0; i<30; i++){
+		       		 	$('#car2').animate({
+	    	   				'marginLeft' : "-=30px" //moves left
+	       				});
+		        	}
+	       		});
+			});
+   	</script>
 
 </body>
 </html>
