@@ -1,3 +1,10 @@
+.car-wrapper{
+	background-color: darkblue;
+	width: 590px;
+	padding-top: 80px;
+	border: 4px solid black;
+}
+
 .light{
 	border-bottom: 70px solid #bbdefb;
 	border-left: 25px solid transparent;
@@ -9,12 +16,12 @@
 	margin-top: 17px;
 	animation: blink .2s infinite linear;
 }
+
 #car{
-	padding-left: 80px;
+	padding-left: 40px;
 	margin-left: 30px;
-	background-color: white;
+	background-color: darkblue;
 	position: relative;
-	/* border: 1px solid black; */
 }
 
 .upperPart{
@@ -22,7 +29,6 @@
 	width: 400px;
 	margin-left: 15px;
 }
-
 
 .triangle{
 	width: 0;
@@ -62,7 +68,6 @@
 	border-bottom: 35px solid black;
 	border-left: 44px solid transparent;
 }
-
 
 .body{
 	height: 80px;
@@ -162,12 +167,12 @@
 }
 
 .moveUp {
-    animation: moveUp .2s infinite linear;
+    animation: moveUp .4s infinite linear;
 }
 
 @keyframes spin {
     100% {
-        transform:rotate(360deg);
+        transform:rotate(-360deg);
     }
 }
 @keyframes blink {
@@ -182,16 +187,15 @@
 	}
 }
  
-
 @keyframes moveUp {
     0% {
-	margin-top: 5px;
+	margin-top: 10px;
     }
     50% {
 	margin-top: 15px;
     }
     100% {
-	margin-top: 5px;
+	margin-top: 10px;
     }
 }
 
@@ -224,4 +228,208 @@
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
+}
+
+.road{
+	padding-top: 5px;
+	height: 40px;
+	width: 590px;
+	background-color: grey;
+	animation: evenOutMargin .4s infinite linear;
+}
+
+@keyframes evenOutMargin{
+	0% {
+	margin-top: 15px;
+    }
+    50% {
+	margin-top: 10px;
+    }
+    100% {
+	margin-top: 15px;
+    }
+}
+
+.white-line{
+	height: 8px;
+	width: 100px;
+	background-color: white;
+	animation: pass .4s infinite linear;
+}
+
+@keyframes pass{
+	0%{margin-left:0%;}
+	20%{margin-left:20%;}
+	40%{margin-left:40%;}
+	60%{margin-left:60%;}
+	100%{margin-left:80%;}
+}
+
+.car-shadow{
+	width: 450px;
+	background: rgba(54, 25, 25, .5);
+	height: 20px;
+	border-radius: 50%;
+	margin-left: 80px;
+}
+
+.fly{
+	position: absolute;
+	border: 2px solid white;
+	font-family: sans-serif;
+	color: white;
+	width: 20px;
+	font-size: 17px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.letterK{
+	animation: lk 4s infinite linear;
+
+}
+@keyframes lk{
+	0%{top: 30px;left: 20px;}
+	30%{top: 150px; transform:rotate(10deg)}
+	35%{top: 10px;left: 170px;transform: rotate(-2000deg);}
+	40%{top: 10px;left: 610px;}
+	100%{top: 0px;left: 610px;}
+}
+.letterA{
+	animation: la2 4s infinite linear;
+}
+@keyframes la2{
+	0%{top: 30px;left: 50px;}
+	25%{top: 150px; transform:rotate(10deg)}
+	30%{top: 10px;left: 170px;transform: rotate(-2000deg);}
+	35%{top: 10px;left: 610px;}
+	100%{top: 0px;left: 610px;}
+}
+.letterN{
+	animation: ln 4s infinite linear;
+}
+@keyframes ln{
+	0%{top: 30px;left: 80px;}
+	20%{top: 150px; transform:rotate(10deg)}
+	25%{top: 10px;left: 170px;transform: rotate(-2000deg);}
+	30%{top: 10px;left: 610px;}
+	100%{top: 0px;left: 610px;}
+}
+.letterG{
+	animation: lg 4s infinite linear;
+	
+}
+
+@keyframes lg{
+	0%{top: 30px;left: 110px;}
+	15%{top: 150px; transform:rotate(10deg)}
+	20%{top: 10px;left: 170px;transform: rotate(-2000deg);}
+	25%{top: 10px;left: 610px;}
+	100%{top: 0px;left: 610px;}
+}
+
+.gradient{
+	position: absolute;
+	left:205px;
+	height: 80px;
+	top: 60px;
+	width: 173px;
+	background: rgba(54, 25, 25, .5);
+	border-top-right-radius: 10%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 30%;
+}
+
+.moon{
+	position: absolute;
+	border-radius: 50%;
+	background-color: yellow;
+	height: 90px;
+	width: 90px;
+	top: 30px;
+	left: 460px;
+}
+
+.moon-space{
+	position: absolute;
+	border-radius: 50%;
+	background-color: darkblue;
+	height: 65px;
+	width: 65px;
+	top: 1px;
+	left: 30px;	
+}
+
+.cloud{
+	position: absolute;
+	border-radius: 50%;
+	background-color: grey;
+	height: 20px;
+	width: 40px;
+	top: 35px;
+	left: 10px;
+	animation: moveCloud1 4s infinite linear;
+}
+@keyframes moveCloud1{
+	0% {
+		left: 20px;
+	}
+	50%{
+		left: 40px;
+	}
+	100%{
+		left: 20px;
+	}
+}
+.cloud2{
+	position: absolute;
+	border-radius: 50%;
+	background-color: grey;
+	height: 20px;
+	width: 40px;
+	top: 60px;
+	left: 30px;
+	animation: moveCloud2 4s infinite linear;
+}
+@keyframes moveCloud2{
+	0% {
+		left: 30px;
+	}
+	50%{
+		left: 10px;
+	}
+	100%{
+		left: 30px;
+	}
+}
+
+.cloud-sm{
+	position: absolute;
+	border-radius: 50%;
+	background-color: grey;
+}
+
+.cl1{
+	height: 20px;
+	width: 20px;
+	top: 5px;
+	left: 5px;	
+}
+.cl2{
+	height: 15px;
+	width: 15px;
+	top: 8px;
+	left: 29px;	
+}
+.cl4{
+	height: 25px;
+	width: 25px;
+	top: 0px;
+	left: 10px;	
+}
+.cl3{
+	height: 18px;
+	width: 18px;
+	top: 2px;
+	left: 29px;	
 }
