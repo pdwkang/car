@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="styles.css">	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	
+	<title>Car</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<div><h2>Click the red car to race the blue car!</h2></div>
-	<div id="car">
+	<div class='wrapper'>
+	<div id="car" class="moveUp">
+
 		<div class="upperPart">
 			<div class="triangle">
 				<div class="triangle-body">
@@ -22,59 +21,27 @@
 			<div class="knob"></div>
 			<div class="headlight"></div>
 			<div class="tail-light"></div>
+			<div class="light"></div>
 		</div>
 
-		<div class="circle1">
-			<div class="rim1"></div>
+		<div class="circle1 rotate">
+			<div class="rim">
+				<div class='rim-inside r1'></div>
+				<div class='rim-inside r2'></div>
+				<div class='rim-inside r3'></div>
+				<div class='rim-inside-circle'></div>
+			</div>
 		</div>		
-
-		<div class="circle2">
-			<div class="rim2"></div>
-		</div>
-
-	</div>
-<br>
-	<div id="car2">
-		<div class="upperPart">
-			<div class="triangle">
-				<div class="triangle-body2">
-					<div class="window"></div>
-				</div>	
+		<div class="circle2 rotate">
+			<div class="rim">
+				<div class='rim-inside r1'></div>
+				<div class='rim-inside r2'></div>
+				<div class='rim-inside r3'></div>
+				<div class='rim-inside-circle'></div>
 			</div>
 		</div>
 
-		<div class="body2">
-			<div class="door2"></div>
-			<div class="knob2"></div>
-			<div class="headlight"></div>
-			<div class="tail-light"></div>
-		</div>
-
-		<div class="circle1">
-			<div class="rim1"></div>
-		</div>		
-
-		<div class="circle2">
-			<div class="rim2"></div>
-		</div>
-
 	</div>
-
-	<script type="text/javascript">
-			$(document).ready(function() {
-				$('#car').click(function() {
-		        	$('#car').animate({
-	    	   			'marginLeft' : "-=50px" //moves left
-	       			});
-	       			//blue car moves on its own after click
-	       			for(var i = 0; i<30; i++){
-		       		 	$('#car2').animate({
-	    	   				'marginLeft' : "-=30px" //moves left
-	       				});
-		        	}
-	       		});
-			});
-   	</script>
-
+	</div>
 </body>
 </html>
